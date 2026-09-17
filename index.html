@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WordConfusion.com — Confused by a Word? Find Your Answer</title>
+<meta name="description" content="WordConfusion helps you instantly understand confusing words — meanings, spelling, and usage — with clear, simple explanations for commonly confused English words like affect vs. effect and your vs. you're." />
+<link rel="canonical" href="https://wordconfusion.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://wordconfusion.com/" />
+<meta property="og:title" content="WordConfusion.com — Confused by a Word? Find Your Answer." />
+<meta property="og:description" content="Clear, friendly explanations for commonly confused English words — meanings, spelling, grammar, and usage — all in one place." />
+<meta property="og:image" content="https://wordconfusion.com/assets/og-image.png" />
+<meta property="og:site_name" content="WordConfusion" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="WordConfusion.com — Confused by a Word? Find Your Answer." />
+<meta name="twitter:description" content="Clear, friendly explanations for commonly confused English words — meanings, spelling, grammar, and usage." />
+<meta name="twitter:image" content="https://wordconfusion.com/assets/og-image.png" />
+
+<meta name="theme-color" content="#4f4fe8" />
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+<link rel="manifest" href="/assets/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/hero-animation.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "WordConfusion",
+  "url": "https://wordconfusion.com/",
+  "description": "WordConfusion helps you understand confusing words — meanings, spelling, and usage — with clear, simple explanations.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://wordconfusion.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "WordConfusion",
+  "url": "https://wordconfusion.com/",
+  "logo": "https://wordconfusion.com/assets/favicon.svg",
+  "sameAs": []
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-bar">
+    <a href="/" class="brand" aria-label="WordConfusion home">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="40" height="40" rx="12" fill="url(#brandGrad)" />
+        <path d="M13 25.5c0-5.2 3.6-9 7.2-9 3.2 0 5.3 2.1 5.3 5 0 3.3-2.6 4.8-4.5 6-1.4.9-2.2 1.6-2.2 2.7" stroke="#fff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+        <circle cx="18.9" cy="34.2" r="0.1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="brandGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4f4fe8"/>
+            <stop offset="1" stop-color="#f2a53a"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      WordConfusion
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#confusions">Word Confusions</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#search">Search</a>
+      <a href="#learn">Learn</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#search" class="btn btn-secondary btn-sm">Search a Word</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a2.9 2.9 0 0 1 5.6 1c0 2-2.9 2-2.9 4"/><circle cx="12" cy="17.2" r="0.1" stroke-width="2.4"/></svg>
+          Clarity for confusing words
+        </span>
+        <h1>Confused by a Word?<br><span class="accent">Find Your Answer.</span></h1>
+        <p class="lede">
+          WordConfusion turns fuzzy, mixed-up words into clear answers. Get instant help with
+          meanings, spelling, and usage for the words English speakers mix up most — so you can
+          write and speak with confidence.
+        </p>
+        <div class="hero-cta-row">
+          <a href="#confusions" class="btn btn-primary">
+            Explore Word Confusions
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#search" class="btn btn-secondary">Find an Answer</a>
+        </div>
+        <div class="hero-trust">
+          <span><strong>50+</strong> word confusions explained</span>
+          <span class="dot"></span>
+          <span>Plain-English, no jargon</span>
+          <span class="dot"></span>
+          <span>Always free</span>
+        </div>
+      </div>
+
+      <div class="hero-scene-wrap">
+        <div class="hero-scene-card">
+          <svg class="confusion-scene" id="confusionScene" data-stage="enter" viewBox="0 0 640 520" role="img" aria-labelledby="sceneTitle sceneDesc" xmlns="http://www.w3.org/2000/svg">
+            <title id="sceneTitle">Animated illustration of the WordConfusion story</title>
+            <desc id="sceneDesc">A person sits at a desk, feels confused with question marks overhead, opens a laptop and searches WordConfusion.com, then relaxes with confidence once the confusion clears.</desc>
+
+            <defs>
+              <clipPath id="sceneClip"><rect x="0" y="0" width="640" height="520" rx="0" /></clipPath>
+              <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="var(--scene-wall-a)" />
+                <stop offset="1" stop-color="var(--scene-wall-b)" />
+              </linearGradient>
+              <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="var(--scene-sky-a)" />
+                <stop offset="1" stop-color="var(--scene-sky-b)" />
+              </linearGradient>
+              <radialGradient id="glowGrad" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0" stop-color="#f7b955" stop-opacity="0.55" />
+                <stop offset="1" stop-color="#f7b955" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+
+            <g clip-path="url(#sceneClip)">
+              <!-- room -->
+              <rect x="0" y="0" width="640" height="420" fill="url(#wallGrad)" />
+              <rect x="0" y="392" width="640" height="128" fill="var(--scene-floor)" />
+
+              <!-- window -->
+              <g class="decor-window">
+                <rect x="452" y="36" width="150" height="168" rx="16" fill="url(#skyGrad)" />
+                <circle cx="500" cy="182" r="30" fill="var(--scene-leaf)" opacity="0.85" />
+                <circle cx="548" cy="196" r="22" fill="var(--scene-leaf)" opacity="0.7" />
+                <rect x="452" y="36" width="150" height="168" rx="16" fill="none" stroke="var(--surface-0)" stroke-width="6" />
+                <rect x="524" y="36" width="6" height="168" fill="var(--surface-0)" />
+                <rect x="452" y="116" width="150" height="6" fill="var(--surface-0)" />
+              </g>
+
+              <!-- shelf -->
+              <g class="decor-shelf">
+                <rect x="46" y="52" width="76" height="280" rx="8" fill="var(--scene-shelf)" />
+                <rect x="46" y="132" width="76" height="6" fill="var(--scene-shelf-dark)" />
+                <rect x="46" y="222" width="76" height="6" fill="var(--scene-shelf-dark)" />
+                <circle cx="84" cy="88" r="15" fill="var(--brand-indigo-400)" />
+                <path d="M84 73v30M69 88h30" stroke="var(--surface-0)" stroke-width="1.6" />
+                <rect x="58" y="160" width="10" height="28" fill="var(--brand-indigo-500)" />
+                <rect x="70" y="152" width="10" height="36" fill="var(--brand-gold-500)" />
+                <rect x="82" y="164" width="10" height="24" fill="var(--brand-indigo-400)" />
+                <polygon points="70,250 90,250 80,232" fill="var(--brand-gold-400)" />
+              </g>
+
+              <!-- door frame (entry) -->
+              <rect x="0" y="150" width="14" height="240" fill="var(--scene-wall-b)" stroke="var(--line)" />
+
+              <!-- desk + chair -->
+              <rect x="248" y="222" width="96" height="128" rx="22" fill="var(--scene-chair)" />
+              <rect x="222" y="330" width="330" height="18" rx="8" fill="var(--scene-desk)" />
+              <rect x="222" y="348" width="330" height="10" fill="var(--scene-desk-dark)" />
+              <rect x="242" y="358" width="10" height="54" fill="var(--scene-desk-dark)" />
+              <rect x="512" y="358" width="10" height="54" fill="var(--scene-desk-dark)" />
+
+              <!-- lamp -->
+              <g class="decor-window">
+                <rect x="470" y="330" width="8" height="4" fill="var(--ink-300)" />
+                <path d="M474 330 L474 270 L520 250" stroke="var(--ink-300)" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <path d="M520 250 l26 -6" stroke="var(--ink-300)" stroke-width="4" stroke-linecap="round"/>
+                <ellipse cx="548" cy="242" rx="12" ry="6" fill="var(--brand-gold-400)" />
+              </g>
+
+              <!-- plant on desk -->
+              <circle cx="240" cy="322" r="10" fill="var(--brand-indigo-100)" />
+              <path d="M240 322c-8-6-8-16-2-22M240 322c6-8 4-18-2-24M240 322c2-8 10-14 16-12" stroke="var(--scene-leaf)" stroke-width="4" fill="none" stroke-linecap="round" />
+
+              <!-- ============ WALKING CHARACTER (enter stage) ============ -->
+              <g id="charWalk">
+                <rect class="walk-leg leg-a" x="-7" y="18" width="8" height="38" rx="4" fill="#3c3f57" />
+                <rect class="walk-leg leg-b" x="1" y="18" width="8" height="38" rx="4" fill="#2c2e42" />
+                <path d="M-14 -18c0-16 12-26 14-26s14 10 14 26v40c0 6-6 10-14 10s-14-4-14-10v-40z" fill="var(--scene-hoodie)" />
+                <circle cx="0" cy="-40" r="15" fill="var(--scene-skin)" />
+                <path d="M-14 -46c2-10 10-16 14-16s12 6 14 16c1 4-2 6-4 4-3-6-7-8-10-8s-7 2-10 8c-2 2-5 0-4-4z" fill="var(--scene-hair)" />
+              </g>
+
+              <!-- ============ SEATED CHARACTER ============ -->
+              <g id="charSeated">
+                <!-- arms resting on desk -->
+                <path d="M-34 -6c-6 10-8 22-4 30" stroke="var(--scene-hoodie-dark)" stroke-width="14" stroke-linecap="round" fill="none" />
+                <path d="M34 -6c6 10 8 22 4 30" stroke="var(--scene-hoodie-dark)" stroke-width="14" stroke-linecap="round" fill="none" />
+
+                <!-- torso -->
+                <path d="M-34 8c0-30 15-50 34-50s34 20 34 50v18c0 8-30 12-34 12s-34-4-34-12V8z" fill="var(--scene-hoodie)" />
+                <path d="M-10 -38c3 8 17 8 20 0" stroke="var(--scene-hoodie-dark)" stroke-width="4" fill="none" stroke-linecap="round" />
+
+                <!-- head -->
+                <circle cx="0" cy="-70" r="26" fill="var(--scene-skin)" />
+                <path d="M-26 -78c2-20 15-30 26-30s24 10 26 30c1 6-3 9-6 5-5-10-12-14-20-14s-15 4-20 14c-3 4-7 1-6-5z" fill="var(--scene-hair)" />
+
+                <!-- face: default -->
+                <g id="faceDefault">
+                  <circle cx="-9" cy="-70" r="2.6" fill="var(--scene-hair)" />
+                  <circle cx="9" cy="-70" r="2.6" fill="var(--scene-hair)" />
+                  <path d="M-6 -56c4 3 8 3 12 0" stroke="var(--scene-hair)" stroke-width="2.4" fill="none" stroke-linecap="round" />
+                </g>
+
+                <!-- face: worried / confused -->
+                <g id="faceWorried">
+                  <circle cx="-9" cy="-71" r="3.4" fill="var(--scene-hair)" />
+                  <circle cx="9" cy="-71" r="3.4" fill="var(--scene-hair)" />
+                  <path d="M-14 -80c4-3 8-3 11-1" stroke="var(--scene-hair)" stroke-width="2.4" fill="none" stroke-linecap="round" />
+                  <path d="M3 -83c4-1 8 0 11 3" stroke="var(--scene-hair)" stroke-width="2.4" fill="none" stroke-linecap="round" />
+                  <ellipse cx="0" cy="-55" rx="4.5" ry="3.4" fill="var(--scene-hair)" opacity="0.85" />
+                </g>
+
+                <!-- face: happy / confident -->
+                <g id="faceHappy">
+                  <path d="M-12 -71c2.4-2.6 5.6-2.6 8 0" stroke="var(--scene-hair)" stroke-width="2.6" fill="none" stroke-linecap="round" />
+                  <path d="M4 -71c2.4-2.6 5.6-2.6 8 0" stroke="var(--scene-hair)" stroke-width="2.6" fill="none" stroke-linecap="round" />
+                  <path d="M-9 -57c5 6 13 6 18 0" stroke="var(--scene-hair)" stroke-width="2.6" fill="none" stroke-linecap="round" />
+                  <circle cx="-16" cy="-62" r="4" fill="#f2a53a" opacity="0.35" />
+                  <circle cx="16" cy="-62" r="4" fill="#f2a53a" opacity="0.35" />
+                </g>
+
+                <!-- question marks -->
+                <g id="qmarks" fill="var(--brand-indigo-500)">
+                  <text class="qmark q1" x="-56" y="-118" font-size="34" font-weight="800" font-family="var(--font-display)">?</text>
+                  <text class="qmark q2" x="14" y="-140" font-size="26" font-weight="800" font-family="var(--font-display)" opacity="0.85">?</text>
+                  <text class="qmark q3" x="44" y="-100" font-size="20" font-weight="800" font-family="var(--font-display)" opacity="0.7">?</text>
+                </g>
+
+                <!-- confidence glow + sparkles -->
+                <circle class="confidence-glow" cx="0" cy="-72" r="70" fill="url(#glowGrad)" />
+                <g id="sparkles" fill="var(--brand-gold-500)">
+                  <path class="sparkle s1" d="M-58 -118l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" />
+                  <path class="sparkle s2" d="M50 -132l2.4 6.4 6.4 2.4-6.4 2.4-2.4 6.4-2.4-6.4-6.4-2.4 6.4-2.4z" />
+                  <path class="sparkle s3" d="M0 -142l2 5.4 5.4 2-5.4 2-2 5.4-2-5.4-5.4-2 5.4-2z" />
+                </g>
+              </g>
+
+              <!-- laptop -->
+              <g id="laptopGroup" transform="translate(330,330)">
+                <path d="M-58 4 L-50 -4 L50 -4 L58 4 Z" fill="#d8dae8" />
+                <rect x="-52" y="-6" width="104" height="6" rx="2" fill="#c3c6da" />
+                <g class="laptop-lid">
+                  <rect x="-50" y="-98" width="100" height="94" rx="9" fill="#20222e" />
+                  <rect x="-44" y="-92" width="88" height="82" rx="5" fill="#ffffff" />
+                  <g class="laptop-screen-content">
+                    <rect x="-40" y="-86" width="80" height="14" rx="7" fill="#eef0f6" />
+                    <circle cx="-33" cy="-79" r="2.4" fill="#e0663f" />
+                    <text class="typed-url" id="typedUrl" x="-24" y="-75" font-size="8.4" fill="#20222e"></text>
+                    <rect class="typing-caret" x="0" y="-81" width="1.6" height="9" fill="#20222e" />
+                    <rect x="-40" y="-64" width="80" height="52" rx="6" fill="#f6f4ff" />
+                    <rect x="-32" y="-54" width="46" height="6" rx="3" fill="var(--brand-indigo-200, #cfd1fb)" />
+                    <rect x="-32" y="-42" width="60" height="5" rx="2.5" fill="#dfe1f2" />
+                    <rect x="-32" y="-32" width="60" height="5" rx="2.5" fill="#dfe1f2" />
+                    <rect x="-32" y="-22" width="36" height="5" rx="2.5" fill="#dfe1f2" />
+                    <circle cx="28" cy="-18" r="7" fill="var(--brand-indigo-500)" />
+                    <path d="M25.5 -18h5M28 -20.5v5" stroke="#fff" stroke-width="1.3" stroke-linecap="round" />
+                  </g>
+                </g>
+              </g>
+            </g>
+
+            <rect x="1" y="1" width="638" height="518" rx="0" fill="none" />
+          </svg>
+        </div>
+        <p class="scene-caption"><span class="status-dot"></span> <span id="sceneCaptionText">Watching a word confusion turn into clarity…</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT IS WORD CONFUSION ============ -->
+  <section class="section" id="what-is-word-confusion">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">The problem</span>
+        <h2>What is a &ldquo;word confusion&rdquo;?</h2>
+        <p class="lede">
+          English is full of words that look alike, sound alike, or simply get mixed up in the moment —
+          even by fluent speakers and confident writers.
+        </p>
+      </div>
+      <div class="word-grid">
+        <div class="topic-card">
+          <div class="topic-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V5a2 2 0 0 1 2-2h4M4 17v2a2 2 0 0 0 2 2h4M20 7V5a2 2 0 0 0-2-2h-4M20 17v2a2 2 0 0 1-2 2h-4"/><path d="M9 12h6"/></svg>
+          </div>
+          <h3>Homophones</h3>
+          <p>Words that sound identical but differ in spelling and meaning, like <em>their</em>, <em>there</em>, and <em>they're</em>.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5"/></svg>
+          </div>
+          <h3>Near-synonyms</h3>
+          <p>Words with overlapping meanings that aren't quite interchangeable, like <em>affect</em> and <em>effect</em>.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+          </div>
+          <h3>Look-alikes</h3>
+          <p>Words that share letters and a similar shape but different jobs, like <em>its</em> and <em>it's</em>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POPULAR WORD CONFUSIONS ============ -->
+  <section class="section section-alt" id="confusions">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Most searched</span>
+        <h2>Popular word confusions</h2>
+        <p class="lede">Start with the mix-ups people look up every day. Each one gets a clear, no-nonsense explanation.</p>
+      </div>
+
+      <div class="word-grid" id="wordGrid">
+        <!-- Cards are static for SEO; also indexed by js/data/confusions.js for the search box -->
+        <a class="word-card reveal" href="confusions/affect-vs-effect.html">
+          <span class="word-card__tag">Top pick</span>
+          <div class="word-card__terms"><span>Affect</span><span class="vs">vs</span><span>Effect</span></div>
+          <p class="word-card__hint">One's usually a verb, the other's usually a noun — here's the simple test to tell them apart.</p>
+          <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="word-card reveal" href="confusions/their-there-theyre.html">
+          <div class="word-card__terms"><span>Their</span><span class="vs">vs</span><span>There</span><span class="vs">vs</span><span>They're</span></div>
+          <p class="word-card__hint">The most famous trio in English. One rule for each, and you'll never mix them up again.</p>
+          <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="word-card reveal" href="confusions/your-vs-youre.html">
+          <div class="word-card__terms"><span>Your</span><span class="vs">vs</span><span>You're</span></div>
+          <p class="word-card__hint">A one-second trick: if you can say &ldquo;you are&rdquo; instead, you need the apostrophe.</p>
+          <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="word-card reveal" href="confusions/then-vs-than.html">
+          <div class="word-card__terms"><span>Then</span><span class="vs">vs</span><span>Than</span></div>
+          <p class="word-card__hint">One word is about time and sequence. The other is about comparison. Here's how to spot which.</p>
+          <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="word-card reveal" href="confusions/its-vs-its.html">
+          <div class="word-card__terms"><span>Its</span><span class="vs">vs</span><span>It's</span></div>
+          <p class="word-card__hint">Possession vs. contraction — the shortest rule on this entire site.</p>
+          <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="word-card reveal" href="confusions/accept-vs-except.html">
+          <div class="word-card__terms"><span>Accept</span><span class="vs">vs</span><span>Except</span></div>
+          <p class="word-card__hint">They sound close but mean opposite things: including something vs. leaving it out.</p>
+          <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Simple by design</span>
+        <h2>How WordConfusion works</h2>
+        <p class="lede">Three steps between you and a word you'll never second-guess again.</p>
+      </div>
+      <div class="steps">
+        <div class="step-card reveal">
+          <span class="step-card__num">1</span>
+          <h3>Find a confusing word</h3>
+          <p>Search for the words that are tripping you up, or browse our library of common English mix-ups.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-card__num">2</span>
+          <h3>Understand the difference</h3>
+          <p>Get a plain-English breakdown of meaning, spelling, and when to use each word — with real examples.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-card__num">3</span>
+          <h3>Use it correctly</h3>
+          <p>Apply the rule with confidence in your writing, speaking, and everyday communication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEARCH ============ -->
+  <section class="section" id="search">
+    <div class="container">
+      <div class="search-panel reveal">
+        <span class="eyebrow" style="color:#fff;">Try it now</span>
+        <h2>What words are confusing you?</h2>
+        <p class="lede">Type any two words, or a word you're unsure about, and we'll point you to the answer.</p>
+
+        <form class="search-form" id="searchForm" role="search">
+          <label for="searchInput" class="visually-hidden">Search for a confusing word</label>
+          <input type="text" id="searchInput" name="q" placeholder="e.g. affect vs effect, or “lose vs loose”" autocomplete="off" />
+          <button type="submit">
+            Find an Answer
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          </button>
+        </form>
+
+        <div class="search-suggestions">
+          <button type="button" data-query="affect effect">affect vs effect</button>
+          <button type="button" data-query="your you're">your vs you're</button>
+          <button type="button" data-query="then than">then vs than</button>
+          <button type="button" data-query="its it's">its vs it's</button>
+          <button type="button" data-query="accept except">accept vs except</button>
+        </div>
+
+        <div class="search-result-panel" id="searchResult" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATIONAL CONTENT ============ -->
+  <section class="section section-alt" id="learn">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Go deeper</span>
+        <h2>Learn the language behind the confusion</h2>
+        <p class="lede">Word confusions rarely happen in isolation — they connect to meaning, grammar, and spelling. Explore the fundamentals.</p>
+      </div>
+      <div class="topic-grid">
+        <div class="topic-card reveal">
+          <div class="topic-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <h3>Word meanings</h3>
+          <p>Precise definitions that show exactly how two similar words diverge in meaning.</p>
+        </div>
+        <div class="topic-card reveal">
+          <div class="topic-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3l4 4-4 4M7 21l-4-4 4-4"/><path d="M21 7H9M3 17h12"/></svg>
+          </div>
+          <h3>Commonly confused words</h3>
+          <p>A growing library covering the mix-ups that show up most in everyday writing.</p>
+        </div>
+        <div class="topic-card reveal">
+          <div class="topic-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+          </div>
+          <h3>Grammar</h3>
+          <p>The grammar rules that explain why a word behaves the way it does in a sentence.</p>
+        </div>
+        <div class="topic-card reveal">
+          <div class="topic-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6M12 22v-6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg>
+          </div>
+          <h3>Spelling</h3>
+          <p>Memory tricks and patterns that help the correct spelling stick for good.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="final-cta reveal">
+        <h2>Stop second-guessing your words.</h2>
+        <p class="lede">Search any confusing word and get a clear, confident answer in seconds.</p>
+        <div class="cta-row">
+          <a href="#search" class="btn btn-primary">Find an Answer</a>
+          <a href="#confusions" class="btn btn-secondary" style="background:transparent;border-color:rgba(255,255,255,0.3);color:#fff;">Browse Word Confusions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="brand" aria-label="WordConfusion home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="40" height="40" rx="12" fill="url(#brandGradFooter)" />
+            <path d="M13 25.5c0-5.2 3.6-9 7.2-9 3.2 0 5.3 2.1 5.3 5 0 3.3-2.6 4.8-4.5 6-1.4.9-2.2 1.6-2.2 2.7" stroke="#fff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+            <defs>
+              <linearGradient id="brandGradFooter" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4f4fe8"/>
+                <stop offset="1" stop-color="#f2a53a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          WordConfusion
+        </a>
+        <p>Clear, friendly answers for the words English speakers mix up most — meanings, spelling, grammar, and usage.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Popular</h4>
+        <ul>
+          <li><a href="confusions/affect-vs-effect.html">Affect vs Effect</a></li>
+          <li><a href="confusions/their-there-theyre.html">Their vs There vs They're</a></li>
+          <li><a href="confusions/your-vs-youre.html">Your vs You're</a></li>
+          <li><a href="confusions/then-vs-than.html">Then vs Than</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More confusions</h4>
+        <ul>
+          <li><a href="confusions/its-vs-its.html">Its vs It's</a></li>
+          <li><a href="confusions/accept-vs-except.html">Accept vs Except</a></li>
+          <li><a href="#confusions">Browse all</a></li>
+          <li><a href="#search">Search a word</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#learn">Learn</a></li>
+          <li><a href="#what-is-word-confusion">What is word confusion?</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> WordConfusion.com. All rights reserved.</span>
+      <span>Made for clearer writing.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/hero-animation.js"></script>
+</body>
+</html>
