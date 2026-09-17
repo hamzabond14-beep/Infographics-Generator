@@ -1,0 +1,150 @@
+/* ============================================================
+   Scroll-scrubbed story: the actual reference video, played back
+   frame-by-frame as the visitor scrolls (not an autoplaying video).
+   js/scroll-story.js maps scroll progress -> frame index and
+   draws it to <canvas>.
+   ============================================================ */
+
+.scroll-story {
+  position: relative;
+  height: 400vh;
+  background: #0c0d1a;
+}
+
+.scroll-story__pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(120% 100% at 50% 0%, #1b1c3d 0%, #0c0d1a 65%);
+}
+
+.scroll-story__intro {
+  position: absolute;
+  top: clamp(28px, 5vw, 56px);
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+  padding-inline: 24px;
+}
+
+.scroll-story__intro .eyebrow {
+  color: var(--brand-gold-400);
+}
+
+.scroll-story__intro h2 {
+  color: #fff;
+  margin-top: 8px;
+}
+
+.scroll-story__frame {
+  position: relative;
+  width: min(920px, 92vw);
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #10111f;
+}
+
+.scroll-story__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-story__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 22px 20px;
+  background: linear-gradient(0deg, rgba(8, 9, 20, 0.88), rgba(8, 9, 20, 0));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scroll-story__caption .status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--brand-indigo-400);
+  flex-shrink: 0;
+  transition: background var(--dur-med) var(--ease-out);
+}
+
+.scroll-story__caption[data-mood="confused"] .status-dot { background: #e0663f; }
+.scroll-story__caption[data-mood="confident"] .status-dot { background: #37b06a; }
+
+.scroll-story__caption p {
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+
+.scroll-story__progress-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.scroll-story__progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--brand-indigo-400), var(--brand-gold-500));
+}
+
+.scroll-story__hint {
+  position: absolute;
+  bottom: clamp(20px, 4vw, 40px);
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity var(--dur-med) var(--ease-out);
+}
+
+.scroll-story__hint.is-hidden {
+  opacity: 0;
+}
+
+/* Static fallback (no-JS / reduced motion): a single resolved frame,
+   normal document flow, no scroll hijacking. */
+.scroll-story.is-static {
+  height: auto;
+  padding-block: clamp(48px, 7vw, 84px);
+}
+
+.scroll-story.is-static .scroll-story__pin {
+  position: static;
+  height: auto;
+  padding-block: clamp(24px, 4vw, 40px);
+}
+
+.scroll-story.is-static .scroll-story__hint {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .scroll-story {
+    height: 320vh;
+  }
+  .scroll-story__frame {
+    width: 94vw;
+  }
+}

@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="css/base.css" />
 <link rel="stylesheet" href="css/components.css" />
 <link rel="stylesheet" href="css/hero-animation.css" />
+<link rel="stylesheet" href="css/scroll-story.css" />
 
 <script type="application/ld+json">
 {
@@ -294,6 +295,27 @@
     </div>
   </section>
 
+  <!-- ============ SCROLL-SCRUBBED STORY ============ -->
+  <section class="scroll-story" id="scrollStory" aria-label="Scroll to play: how confusion turns into clarity on WordConfusion">
+    <div class="scroll-story__pin">
+      <div class="scroll-story__intro">
+        <span class="eyebrow">Scroll to play the story</span>
+        <h2>Watch confusion turn into clarity</h2>
+      </div>
+      <div class="scroll-story__frame">
+        <canvas id="storyCanvas" class="scroll-story__canvas" width="760" height="428" role="img" aria-label="Animated sequence: a person gets confused by a word, searches WordConfusion.com on their laptop, and becomes confident once they find the answer."></canvas>
+        <div class="scroll-story__caption" id="storyCaption" data-mood="neutral">
+          <span class="status-dot"></span>
+          <p id="storyCaptionText">He walks in with a question on his mind…</p>
+        </div>
+        <div class="scroll-story__progress-track">
+          <div class="scroll-story__progress-bar" id="storyProgressBar"></div>
+        </div>
+      </div>
+      <p class="scroll-story__hint" id="storyHint">Keep scrolling ↓</p>
+    </div>
+  </section>
+
   <!-- ============ WHAT IS WORD CONFUSION ============ -->
   <section class="section" id="what-is-word-confusion">
     <div class="container">
@@ -547,5 +569,6 @@
 
 <script type="module" src="js/main.js"></script>
 <script type="module" src="js/hero-animation.js"></script>
+<script type="module" src="js/scroll-story.js"></script>
 </body>
 </html>
