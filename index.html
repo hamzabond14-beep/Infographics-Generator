@@ -27,11 +27,12 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
 <link rel="stylesheet" href="css/base.css" />
 <link rel="stylesheet" href="css/components.css" />
 <link rel="stylesheet" href="css/hero-animation.css" />
+<link rel="stylesheet" href="css/cinematic.css" />
 
 <script type="application/ld+json">
 {
@@ -58,10 +59,10 @@
 }
 </script>
 </head>
-<body>
+<body class="is-home">
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
+<header class="site-header site-header--cinematic" id="siteHeader">
   <div class="container nav-bar">
     <a href="/" class="brand" aria-label="WordConfusion home">
       <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -96,38 +97,61 @@
 
 <main id="main">
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-content">
-        <span class="eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a2.9 2.9 0 0 1 5.6 1c0 2-2.9 2-2.9 4"/><circle cx="12" cy="17.2" r="0.1" stroke-width="2.4"/></svg>
-          Clarity for confusing words
+  <!-- ============ HERO (cinematic, full-bleed) ============ -->
+  <section class="hero-cinematic" id="heroCinematic">
+    <div class="hero-cinematic__bg" aria-hidden="true">
+      <div class="hero-cinematic__glow glow-a"></div>
+      <div class="hero-cinematic__glow glow-b"></div>
+      <div class="hero-cinematic__grid"></div>
+    </div>
+
+    <div class="container hero-cinematic__inner">
+      <span class="eyebrow eyebrow--light">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a2.9 2.9 0 0 1 5.6 1c0 2-2.9 2-2.9 4"/><circle cx="12" cy="17.2" r="0.1" stroke-width="2.4"/></svg>
+        Clarity for confusing words
+      </span>
+
+      <h1 class="hero-cinematic__title">
+        <span class="hero-cinematic__line">Confused by</span>
+        <span class="hero-cinematic__ticker" id="heroTicker" aria-live="polite">
+          <span class="hero-cinematic__ticker-word is-active">Affect or Effect</span>
         </span>
-        <h1>Confused by a Word?<br><span class="accent">Find Your Answer.</span></h1>
-        <p class="lede">
-          WordConfusion turns fuzzy, mixed-up words into clear answers. Get instant help with
-          meanings, spelling, and usage for the words English speakers mix up most — so you can
-          write and speak with confidence.
-        </p>
-        <div class="hero-cta-row">
-          <a href="#confusions" class="btn btn-primary">
-            Explore Word Confusions
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#search" class="btn btn-secondary">Find an Answer</a>
-        </div>
-        <div class="hero-trust">
-          <span><strong>50+</strong> word confusions explained</span>
-          <span class="dot"></span>
-          <span>Plain-English, no jargon</span>
-          <span class="dot"></span>
-          <span>Always free</span>
+        <span class="hero-cinematic__line hero-cinematic__line--accent">Find Your Answer.</span>
+      </h1>
+
+      <p class="lede hero-cinematic__lede">
+        WordConfusion turns fuzzy, mixed-up words into clear answers — meanings, spelling, and usage
+        for the words English speakers mix up most.
+      </p>
+
+      <div class="hero-cta-row">
+        <a href="#confusions" class="btn btn-primary btn-magnetic">
+          Explore Word Confusions
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#search" class="btn btn-ghost-light btn-magnetic">Find an Answer</a>
+      </div>
+    </div>
+
+    <div class="hero-cinematic__scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><rect x="1" y="1" width="12" height="18" rx="6" stroke="currentColor" stroke-width="1.4"/><circle class="scroll-cue-dot" cx="7" cy="6" r="1.6" fill="currentColor"/></svg>
+    </div>
+  </section>
+
+  <!-- ============ PINNED SCROLL STORY (scroll to play) ============ -->
+  <section class="pinned-story" id="pinnedStory" aria-label="Scroll to play: how confusion turns into clarity on WordConfusion">
+    <div class="pinned-story__inner">
+      <div class="pinned-story__text">
+        <span class="eyebrow eyebrow--light">Scroll to play the story</span>
+        <p class="pinned-story__caption" id="storyCaptionText">He walks in with a question on his mind…</p>
+        <div class="pinned-story__progress-track">
+          <div class="pinned-story__progress-bar" id="storyProgressBar"></div>
         </div>
       </div>
 
       <div class="hero-scene-wrap">
-        <div class="hero-scene-card">
+        <div class="hero-scene-card hero-scene-card--dark">
           <svg class="confusion-scene" id="confusionScene" data-stage="enter" viewBox="0 0 640 520" role="img" aria-labelledby="sceneTitle sceneDesc" xmlns="http://www.w3.org/2000/svg">
             <title id="sceneTitle">Animated illustration of the WordConfusion story</title>
             <desc id="sceneDesc">A person sits at a desk, feels confused with question marks overhead, opens a laptop and searches WordConfusion.com, then relaxes with confidence once the confusion clears.</desc>
@@ -289,7 +313,24 @@
             <rect x="1" y="1" width="638" height="518" rx="0" fill="none" />
           </svg>
         </div>
-        <p class="scene-caption"><span class="status-dot"></span> <span id="sceneCaptionText">Watching a word confusion turn into clarity…</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAND ============ -->
+  <section class="stats-band">
+    <div class="container stats-band__grid">
+      <div class="stats-band__item reveal">
+        <span class="stats-band__num">50+</span>
+        <span class="stats-band__label">Word confusions decoded</span>
+      </div>
+      <div class="stats-band__item reveal">
+        <span class="stats-band__num">100%</span>
+        <span class="stats-band__label">Plain English, always free</span>
+      </div>
+      <div class="stats-band__item reveal">
+        <span class="stats-band__num">&lt;3s</span>
+        <span class="stats-band__label">To find your answer</span>
       </div>
     </div>
   </section>
@@ -331,48 +372,58 @@
     </div>
   </section>
 
-  <!-- ============ POPULAR WORD CONFUSIONS ============ -->
-  <section class="section section-alt" id="confusions">
-    <div class="container">
-      <div class="section-head">
+  <!-- ============ POPULAR WORD CONFUSIONS (horizontal lineup) ============ -->
+  <section class="lineup" id="confusions">
+    <div class="lineup__pin">
+      <div class="container lineup__head">
         <span class="eyebrow">Most searched</span>
-        <h2>Popular word confusions</h2>
-        <p class="lede">Start with the mix-ups people look up every day. Each one gets a clear, no-nonsense explanation.</p>
+        <h2>The lineup</h2>
+        <p class="lede">Start with the mix-ups people look up every day. Scroll to browse the range.</p>
       </div>
 
-      <div class="word-grid" id="wordGrid">
+      <div class="lineup__track" id="lineupTrack">
         <!-- Cards are static for SEO; also indexed by js/data/confusions.js for the search box -->
-        <a class="word-card reveal" href="confusions/affect-vs-effect.html">
+        <a class="lineup-card" href="confusions/affect-vs-effect.html">
+          <span class="lineup-card__index">01</span>
           <span class="word-card__tag">Top pick</span>
           <div class="word-card__terms"><span>Affect</span><span class="vs">vs</span><span>Effect</span></div>
           <p class="word-card__hint">One's usually a verb, the other's usually a noun — here's the simple test to tell them apart.</p>
           <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
-        <a class="word-card reveal" href="confusions/their-there-theyre.html">
+        <a class="lineup-card" href="confusions/their-there-theyre.html">
+          <span class="lineup-card__index">02</span>
           <div class="word-card__terms"><span>Their</span><span class="vs">vs</span><span>There</span><span class="vs">vs</span><span>They're</span></div>
           <p class="word-card__hint">The most famous trio in English. One rule for each, and you'll never mix them up again.</p>
           <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
-        <a class="word-card reveal" href="confusions/your-vs-youre.html">
+        <a class="lineup-card" href="confusions/your-vs-youre.html">
+          <span class="lineup-card__index">03</span>
           <div class="word-card__terms"><span>Your</span><span class="vs">vs</span><span>You're</span></div>
           <p class="word-card__hint">A one-second trick: if you can say &ldquo;you are&rdquo; instead, you need the apostrophe.</p>
           <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
-        <a class="word-card reveal" href="confusions/then-vs-than.html">
+        <a class="lineup-card" href="confusions/then-vs-than.html">
+          <span class="lineup-card__index">04</span>
           <div class="word-card__terms"><span>Then</span><span class="vs">vs</span><span>Than</span></div>
           <p class="word-card__hint">One word is about time and sequence. The other is about comparison. Here's how to spot which.</p>
           <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
-        <a class="word-card reveal" href="confusions/its-vs-its.html">
+        <a class="lineup-card" href="confusions/its-vs-its.html">
+          <span class="lineup-card__index">05</span>
           <div class="word-card__terms"><span>Its</span><span class="vs">vs</span><span>It's</span></div>
           <p class="word-card__hint">Possession vs. contraction — the shortest rule on this entire site.</p>
           <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
-        <a class="word-card reveal" href="confusions/accept-vs-except.html">
+        <a class="lineup-card" href="confusions/accept-vs-except.html">
+          <span class="lineup-card__index">06</span>
           <div class="word-card__terms"><span>Accept</span><span class="vs">vs</span><span>Except</span></div>
           <p class="word-card__hint">They sound close but mean opposite things: including something vs. leaving it out.</p>
           <span class="word-card__link">Learn the difference <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
+      </div>
+
+      <div class="lineup__progress-track">
+        <div class="lineup__progress-bar" id="lineupProgressBar"></div>
       </div>
     </div>
   </section>
@@ -546,6 +597,6 @@
 </footer>
 
 <script type="module" src="js/main.js"></script>
-<script type="module" src="js/hero-animation.js"></script>
+<script type="module" src="js/cinematic.js"></script>
 </body>
 </html>
